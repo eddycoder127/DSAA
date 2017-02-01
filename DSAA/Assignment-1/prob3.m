@@ -1,0 +1,13 @@
+n = -2:2;
+x=[0 0 1 1 1 0 0];
+y=[0 1 2 3 2 1 0];
+C=conv(x,y);
+subplot(3,1,1);
+stem(x);
+title('signal 1');
+subplot(3,1,2);
+stem(y);
+title('signal 2');
+subplot(3,1,3);
+stem(C);
+title('discrete convolution to find response');
